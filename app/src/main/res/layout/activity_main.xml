@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/galleryBtn"
+            android:text="Pick up image"/>
+
+        <ImageView
+            android:id="@+id/imgPicked"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:maxLines="5"
+            android:scrollIndicators="start"
+            android:scrollbars="vertical"
+            android:ellipsize="marquee"
+            android:id="@+id/tvBytes"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/convertBytesToImageBtn"
+            android:text="Convert bytes to image"/>
+
+        <ImageView
+            android:id="@+id/imgConverted"
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+</ScrollView>
